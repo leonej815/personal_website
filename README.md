@@ -1,5 +1,5 @@
 Joseph Leone - Technical Portfolio
-A custom built website to act as a resume and portfolio showing my information and projects.
+A custom built website to act as a resume and portfolio showing my information and projects. Currently hosted at https://leonej815.pythonanywhere.com/.
 
 Tech Stack
 * Frontend: HTML5, CSS, Javascript.
