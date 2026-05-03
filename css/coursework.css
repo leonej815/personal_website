@@ -1,0 +1,78 @@
+iframe{
+    width: calc(100% + 40px); 
+    margin-left: -20px;
+    margin-right: -20px;
+    
+    border: none;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    
+    height: 70vh;
+    min-height: 450px;
+    overflow: hidden;
+}
+
+#mobile-download{
+    display: none;
+}
+
+#mobile-viewer{
+    display: none;
+}
+
+@media screen and (max-width: 600px) and (pointer: coarse){
+    #main-viewer{
+        display: none;
+    }
+    
+    #mobile-viewer{
+        display: block;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    #gallery-nav {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #mobile-download{
+        display: block;
+        float: right;
+    }
+
+    #mobile-download button:hover{
+        cursor: pointer;
+    }
+}
+
+#gallery-nav{
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+#category-group, #control-group{
+    display: inline-block;
+}
+
+.gallery-nav-button{
+    text-decoration: none; 
+    color: inherit;        
+    padding: 5px;    
+}
+
+.gallery-nav-button:hover{
+    color: rgb(67, 67, 67);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-arrow{
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+body{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(238, 238, 238);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    min-height: 100vh;box-sizing: border-box; /* stops horizontal scrolling */
+}
+
+html{
+    background-color: rgb(67, 67, 67);
+    height: 100%;
+}
+
+hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#nav a{
+    color: inherit;        
+    padding: 5px;
+    background-color: rgb(67, 67, 67);
+    color: rgb(238, 238, 238);
+}
+
+#nav a:hover{
+    background-color: rgb(238, 238, 238);
+    color: black;
+}
+
+#nav{
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    margin-right: -20px;
+    margin-left: -20px;
+    background-color: rgb(67, 67, 67);
+}
+
+h4{
+    margin-bottom: 0px;
+}
+
+ul{
+    margin-top: 0px;
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+}

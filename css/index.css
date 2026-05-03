@@ -1,0 +1,13 @@
+img{
+    float: right;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#description{
+    margin-top: 0px;
+}
+
+.verify-link{
+    text-decoration: none;
+}
