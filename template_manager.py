@@ -3,6 +3,7 @@ import os
 
 
 def get_nav_contents(html_file_path, title=None):
+    print(f"DEBUG: Received path -> {html_file_path}")
     base_name = re.match(r"/(.*)\.html", html_file_path).group(1)
     if title == None:
         title = base_name.replace("_", " ").title() + " Joseph Leone"
@@ -18,6 +19,11 @@ def get_nav_contents(html_file_path, title=None):
     nav_contents = nav_contents.replace("{{ title }}", title)
     nav_contents = nav_contents.replace("{{ css }}", css_html)
     nav_contents = nav_contents.replace("{{ js }}", js_html)
+    print(f"{{{{ active:{base_name} }}}}")
+    print(f"{{{{ active:{base_name} }}}}")
+    print(f"{{{{ active:{base_name} }}}}")
+    nav_contents = nav_contents.replace(f"{{{{ active:{base_name} }}}}", "class=active")    
+    nav_contents = re.sub(r"\{\{ active:.* \}\}", "class=inactive", nav_contents)
     return nav_contents
 
 

@@ -28,8 +28,13 @@ hr{
 }
 
 #nav a:hover{
-    background-color: rgb(238, 238, 238);
-    color: black;
+    background-color: rgb(238, 238, 238) !important;
+    color: black !important;
+}
+
+#nav a.active{
+    background-color: rgb(225, 225, 225);
+    color: black
 }
 
 #nav{
