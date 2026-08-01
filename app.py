@@ -20,6 +20,7 @@ def web_app(environment, start_response):
         except FileNotFoundError:
             response = text_404(path)
 
+    # handle subpages
     elif path in ("/education.html", "/projects.html", "/work_history.html", "/coursework.html"):
         try:
             nav_content = get_nav_contents(path)
@@ -75,8 +76,9 @@ def web_app(environment, start_response):
     return [response["response_body"]]
 
 
+# added this so ctrl+C can be used to stop app.py from running
 class ThreadingWSGIServer(ThreadingMixIn, WSGIServer):
-    daemon_threads = True
+    daemon_threads = True 
 
 
 # start server locally

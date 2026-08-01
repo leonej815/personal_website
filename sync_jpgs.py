@@ -20,10 +20,13 @@ def main():
 
 
 def sync_pdfs_to_jpgs(folders):
+    # loop through assignment topic folder names
     for folder in folders:
+        # create the path for the pdf folder and image folder
         pdf_folder = os.path.join("pdfs", folder)
         image_folder = os.path.join("images", folder)
-            
+
+        # go through the pdf folder and create jpg copies of those pdf files in the images folder
         for filename in os.listdir(pdf_folder):
             if filename.endswith('.pdf'):
                 basename = os.path.splitext(filename)[0]

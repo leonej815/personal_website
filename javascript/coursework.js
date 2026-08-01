@@ -2,6 +2,10 @@
 const collections = {
     computer_programming: [
         {
+            url: "pdfs/computer_programming/cen3062_assignment3.pdf#view=FitH",
+            img: "images/computer_programming/cen3062_assignment3.jpg"
+        },
+        {     
             url: "pdfs/computer_programming/cop3035_homework5_redacted.pdf#view=FitH",
             img: "images/computer_programming/cop3035_homework5_redacted.jpg"
         },
